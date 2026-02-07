@@ -1,47 +1,185 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bassam Website - Cyberpunk Prompt</title>
+    <style>
+      :root {
+        color-scheme: dark;
+      }
+      body {
+        margin: 0;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        background: radial-gradient(circle at top, #1c0b3a 0%, #0b0a1a 35%, #05040a 100%);
+        color: #e8e8ff;
+      }
+      header {
+        padding: 56px 12vw 24px;
+      }
+      h1 {
+        font-size: clamp(2rem, 4vw, 3.5rem);
+        letter-spacing: 0.05em;
+        margin: 0 0 8px;
+      }
+      .tagline {
+        font-size: clamp(1rem, 1.6vw, 1.2rem);
+        margin-bottom: 20px;
+      }
+      p {
+        margin: 0;
+        max-width: 720px;
+        color: #b7b7ff;
+      }
+      main {
+        display: grid;
+        gap: 24px;
+        padding: 0 12vw 64px;
+      }
+      .card {
+        background: linear-gradient(135deg, rgba(64, 0, 128, 0.4), rgba(0, 198, 255, 0.18));
+        border: 1px solid rgba(0, 198, 255, 0.35);
+        box-shadow: 0 24px 60px rgba(0, 0, 0, 0.45);
+        border-radius: 16px;
+        padding: 24px;
+        backdrop-filter: blur(12px);
+      }
+      .card h2 {
+        margin-top: 0;
+        color: #8be9ff;
+        text-transform: uppercase;
+        letter-spacing: 0.08em;
+        font-size: 0.95rem;
+      }
+      .prompt {
+        background: rgba(8, 12, 26, 0.7);
+        border-radius: 12px;
+        padding: 16px;
+        border: 1px solid rgba(139, 233, 255, 0.25);
+        font-size: 0.98rem;
+        line-height: 1.6;
+        white-space: pre-wrap;
+      }
+      .actions {
+        display: flex;
+        gap: 12px;
+        flex-wrap: wrap;
+        margin-top: 16px;
+      }
+      button {
+        background: linear-gradient(135deg, rgba(0, 198, 255, 0.8), rgba(124, 58, 237, 0.9));
+        border: none;
+        color: #0b0a1a;
+        padding: 10px 18px;
+        border-radius: 999px;
+        font-weight: 600;
+        cursor: pointer;
+        letter-spacing: 0.02em;
+      }
+      button:focus-visible {
+        outline: 2px solid #8be9ff;
+        outline-offset: 2px;
+      }
+      ul {
+        padding-left: 20px;
+        margin: 8px 0 0;
+      }
+      li {
+        margin-bottom: 8px;
+        line-height: 1.5;
+      }
+      .media {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 24px;
+        align-items: center;
+      }
+      audio {
+        width: 260px;
+      }
+      img {
+        max-width: min(360px, 100%);
+        border-radius: 16px;
+        border: 1px solid rgba(139, 233, 255, 0.4);
+        box-shadow: 0 20px 50px rgba(0, 0, 0, 0.55);
+      }
+      a {
+        color: #7df9ff;
+      }
+      .note {
+        color: #7f86b5;
+        font-size: 0.9rem;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Almutiri Mind</h1>
+      <p class="tagline">
+        A cinematic prompt for visualizing a neon-drenched city and a self-aware digital hero.
+      </p>
+      <p class="note">
+        Copy the full prompt below and drop it into your favorite image generator or cinematic
+        storyboard tool.
+      </p>
+    </header>
 
+    <main>
+      <section class="card">
+        <h2>Full Prompt</h2>
+        <div class="prompt" id="prompt-text">
+Story: A futuristic AI entity standing on a skyscraper rooftop, looking at a digital city, questioning existence.
 
+Environment: A cyberpunk futuristic city at night, neon lights, flying cars, holographic billboards, foggy atmosphere, reflective wet streets.
 
+Character: A humanoid digital avatar with glowing blue eyes and holographic body details.
 
-<head>
+Camera: Cinematic wide shot, slow dolly forward movement, slight tilt down angle.
 
-<h1>
-    almutiri mind
-</h1>
+Lighting: Volumetric lighting, blue and purple neon rim light, realistic global illumination, soft shadows.
 
+Style: Ultra realistic, cinematic, 4K, high detail, shallow depth of field, cyberpunk aesthetic.
+        </div>
+        <div class="actions">
+          <button type="button" id="copy-button">Copy prompt</button>
+          <a href="https://www.google.com" target="_blank" rel="noreferrer">Explore references</a>
+        </div>
+      </section>
 
-</head>
+      <section class="card media">
+        <div>
+          <h2>Soundtrack</h2>
+          <audio
+            src="https://j.top4top.io/m_3561hb8fq1.mp3"
+            controls
+            autoplay
+            loop
+          ></audio>
+          <p>
+            Optional ambient audio to match the neon skyline mood.
+          </p>
+        </div>
+        <img src="ChatGPT Image 23 أغسطس 2025، 04_30_21 ص.png" alt="Portrait artwork">
+      </section>
+    </main>
+    <script>
+      const copyButton = document.getElementById("copy-button");
+      const promptText = document.getElementById("prompt-text");
 
-<body>
-
-<a href="www.google.com"></a>
-
-
-<title>
-    bassam weibsite
-
-</title>
-
-
-<audio src="https://j.top4top.io/m_3561hb8fq1.mp3" width="300" height="32" controls="controls" autoplay loop></audio>
-
-<img src="ChatGPT Image 23 أغسطس 2025، 04_30_21 ص.png" alt="a picture of me" width="500" height="700">
-
-
-
-
-
-
-</body>
-
-
-
-
-
-
-
-
-
+      if (copyButton && promptText) {
+        copyButton.addEventListener("click", async () => {
+          try {
+            await navigator.clipboard.writeText(promptText.textContent.trim());
+            copyButton.textContent = "Copied!";
+            setTimeout(() => {
+              copyButton.textContent = "Copy prompt";
+            }, 2000);
+          } catch (error) {
+            copyButton.textContent = "Copy failed";
+          }
+        });
+      }
+    </script>
+  </body>
 </html>
 
